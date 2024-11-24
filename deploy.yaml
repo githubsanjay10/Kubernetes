@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-cake
+  name: deployment-wedding
   labels:
     app: frontend
 spec:
@@ -15,7 +15,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - name: cakeshop-container
-          image: dockerprabha2001/cakeshop-httpd
+        - name: wedding-container
+          image: sanjay145/wedding
           ports:
             - containerPort: 80
